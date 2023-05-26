@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --font-family: 'Roboto Slab', serif;
+    --color: #730177;
+    --font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 2rem;
+    gap: 2rem;
+    color: #730177;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+#main-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 5rem 0;
+    font-family: var(--font-family);
+    font-size: 18px;
+    background: #ffffff;
+    color: #730177;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+#main-container .password-container{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 2%;
+    background-color: #faf8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8rem;
+    border-radius: 5px;
+    text-align: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#main-container .password-container .password-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+#main-container .password-container .password-field #password{
+    width: 100%;
+    height: 10px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: default;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('./49089.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(50, 113, 50);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.large{
+    font-size: 18px;
+}
+.medium{
+    font-size: 14px;
+}
+.little{
+    font-size: 10px;
+}
+
+#main-container .password-container .password-field #pass-copy-btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px 9px;
+    outline: none;
+    border: none;
+    background: #ffffff;
+    color: #730177;
+    box-shadow: inset 0px 0px 4px #d6d6d6,
+            inset -4px -4px 4px #ffffff;
+    transition: all 0.2s;
+}
+
+#main-container .password-container .password-field #pass-copy-btn1:hover{
+    background-color: #ece9e9;
+}
+
+#main-container .password-container .password-field #pass-copy-btn1:active{
+    background-color: #c18ad1;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+#main-container .password-container .password-field .renew-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px 9px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #730177;
+    box-shadow: inset 0px 0px 4px #d6d6d6,
+            inset -4px -4px 4px #ffffff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 0.2s;
+}
+
+#main-container .password-container .password-field .renew-button:hover{
+    background-color: #ece9e9;
+}
+
+#main-container .password-container .password-field .renew-button:active{
+    background-color: #c18ad1;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+#main-container .costumize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+#main-container .costumize .title{
+    font-weight: 700;
+    border-bottom: 1px solid var(--color);
+    width: 85%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+#main-container .costumize .actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#main-container .costumize .actions .slider{
+    appearance: none;
+    -moz-appearance: none;
+    height: 10px;
+    width: 100%;
+    background: #dddddd;
+    outline: none;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#main-container .costumize .actions .slider:hover{
+    opacity: 1;
+}
+
+#main-container .costumize .actions .slider::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#main-container .costumize .actions .slider::-moz-range-thumb {
+    background-color: var(--thumb-color);
+    width: 20px;
+    height: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#main-container .costumize .actions #box-action .checkbox-container{
+    display: block;
+    position: relative;
+    text-align: start;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main-container .costumize .actions #box-action .checkbox-container input{
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#main-container .costumize .actions #box-action .checkbox-container .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dddddd;
+    transition: all 0.2s;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#main-container .costumize .actions #box-action .checkbox-container:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+
+#main-container .costumize .actions #box-action .checkbox-container input:checked ~ .checkmark{
+    background-color: var(--color);
+}
+
+#main-container .costumize .actions #box-action .checkbox-container .checkmark::after{
+    content: '';
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#main-container .costumize .actions #box-action .checkbox-container input:checked ~ .checkmark::after{
+    display: block;
+}
+
+#main-container .security-indicator{
+    background-color: #d8d8d8;
+    height: 5px;
+    width: 94%;
+    margin-top: -3rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#main-container .security-indicator .bar{
+    height: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.5s;
+}
+
+.completed{
+    border-bottom-right-radius: 0;
+    background-color: rgb(48, 188, 48);
+}
+
+.critical{
+    background-color: rgb(254, 68, 68);
+}
+
+.warning{
+    background-color: rgb(204, 222, 43);
+}
+
+.safe{
+    background-color: rgb(48, 188, 48);
+}
+
+#main-container .pass-copy-btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-container .pass-copy-btn2 button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #730177;
+    font-family: var(--font-family);
+    font-size: 18px;
+    box-shadow: inset 0px 0px 4px #d6d6d6,
+            inset -4px -4px 4px #ffffff;
+    transition: all 0.2s;
+}
+
+#main-container .pass-copy-btn2 button:hover{
+    background-color: #ece9e9;
+}
+
+#main-container .pass-copy-btn2 button:active{
+    background-color: #c18ad1;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 5rem;
+    margin: 5rem 0 1.5rem;
+    color: #730177;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+#footer .separator{
+    background-color: #d8d8d8;
+    height: 10px;
+    width: 30%;
+}
+
+#footer .separator .line{
+    height: 0.5px;
+    background-color: #730177;
+}
+
+#footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+#footer .social-media i{
+    font-size: 24px;
+    color: #730177;
+}
+
+#footer .social-media i:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+#footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsivity*/
+@media screen and (max-width: 920px) {
+    #main-container .costumize {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero p{
+        text-align: center;
+    }
+
+    #main-container .password-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #main-container .password-container .password-field {
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    #main-container .costumize {
+        width: 90%;
+    }
+
+    #main-container .costumize .actions {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #hero p{
+        text-align: center;
+    }
+
+    #main-container .costumize .actions {
+        flex-direction: column;
+    }
+}
